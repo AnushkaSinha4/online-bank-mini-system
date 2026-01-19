@@ -3,10 +3,10 @@ An Online Bank Mini System is built using HTML, CSS and JavaScript which allow u
 This project is developed as part of and assignment to demonstarte validation logic, transaction handling and UI design.
 ## Live Demo
 Live Deployment URL:  
-https://YOUR-USERNAME.github.io/online-bank-mini-system/
+https://AnushkaSinha4.github.io/online-bank-mini-system/
 
 GitHub Repository:  
-https://github.com/YOUR-USERNAME/online-bank-mini-system
+https://github.com/AnushkaSinha4/online-bank-mini-system
 ##  Features
 Create new bank account  
 Deposit money  
