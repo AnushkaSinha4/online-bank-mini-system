@@ -1,0 +1,143 @@
+/* ===== Global Reset ===== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    background: #f4f7fb;
+    color: #333;
+}
+
+
+/* ===== Navbar ===== */
+
+.navbar {
+    background: #0a2e5c;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.navbar h1 {
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.navbar p {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+
+/* ===== Main Container ===== */
+
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 0 15px;
+}
+
+
+/* ===== Card Design ===== */
+
+.form-container {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.form-container:hover {
+    transform: translateY(-4px);
+}
+
+.form-container h2 {
+    font-size: 17px;
+    color: #0a2e5c;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 6px;
+}
+
+
+/* ===== Inputs ===== */
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 7px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #0a2e5c;
+    outline: none;
+    box-shadow: 0 0 4px rgba(10, 46, 92, 0.3);
+}
+
+
+/* ===== Buttons ===== */
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    background: #0a2e5c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #08305f;
+}
+
+
+/* ===== Output Panel ===== */
+
+.output {
+    margin: 20px auto;
+    padding: 12px;
+    width: 60%;
+    border-radius: 6px;
+    font-weight: bold;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+
+/* Success / Error Colors handled by JS */
+
+.output.success {
+    border-left: 5px solid #28a745;
+}
+
+.output.error {
+    border-left: 5px solid #dc3545;
+}
+
+
+/* ===== Footer ===== */
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+    color: #777;
+    margin-top: 30px;
+}
