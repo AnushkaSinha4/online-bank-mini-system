@@ -1,67 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
     <title>Online Bank System</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ===== NAVBAR ===== -->
-    <div class="navbar">
+    <div class="header">
         <h1>Online Bank System</h1>
-        <p>Secure Transaction Validation Platform</p>
+        <p>Secure Transaction Validation Portal</p>
     </div>
 
-    <!-- ===== MAIN CONTAINER ===== -->
     <div class="container">
 
-        <!-- Create Account -->
         <div class="form-container">
             <h2>Create Account</h2>
             <input type="number" id="createAccNo" placeholder="Account Number">
             <input type="text" id="createName" placeholder="Holder Name">
             <label>
-            <input type="checkbox" id="createKYC"> KYC Verified
-        </label>
+            <input type="checkbox" id="createKYC"> I confirm KYC is verified
+        </label><br>
             <button onclick="createAccount()">Create Account</button>
         </div>
 
-        <!-- Deposit -->
         <div class="form-container">
             <h2>Deposit Money</h2>
             <input type="number" id="depositAccNo" placeholder="Account Number">
-            <input type="number" id="depositAmount" placeholder="Amount">
+            <input type="number" id="depositAmount" placeholder="Amount (₹)">
             <button onclick="depositMoney()">Deposit</button>
         </div>
 
-        <!-- Withdraw -->
         <div class="form-container">
             <h2>Withdraw Money</h2>
             <input type="number" id="withdrawAccNo" placeholder="Account Number">
-            <input type="number" id="withdrawAmount" placeholder="Amount">
+            <input type="number" id="withdrawAmount" placeholder="Amount (₹)">
             <button onclick="withdrawMoney()">Withdraw</button>
         </div>
 
-        <!-- Transfer -->
         <div class="form-container">
             <h2>Transfer Money</h2>
             <input type="number" id="senderAccNo" placeholder="Sender Account">
             <input type="number" id="receiverAccNo" placeholder="Receiver Account">
-            <input type="number" id="transferAmount" placeholder="Amount">
+            <input type="number" id="transferAmount" placeholder="Amount (₹)">
             <button onclick="transferMoney()">Transfer</button>
+        </div>
+
+        <div class="form-container full-width">
+            <h2>Account Listing</h2>
+            <p>Total Accounts: <b><span id="totalCount">0</span></b></p>
+
+            <div class="table-container">
+                <table id="accountTable">
+                    <thead>
+                        <tr>
+                            <th>Account No</th>
+                            <th>Holder Name</th>
+                            <th>Balance</th>
+                            <th>KYC Verified</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
         </div>
 
     </div>
 
-    <!-- Output Panel -->
     <div id="output" class="output"></div>
 
-    <!-- Footer -->
+    <div class="output-actions">
+        <button onclick="clearOutput()">Clear Message</button>
+    </div>
+
     <div class="footer">
-        © 2026 Online Bank Mini System | Assignment Project
+        Online Bank Mini System • Assignment Project
     </div>
 
     <script src="script.js"></script>
